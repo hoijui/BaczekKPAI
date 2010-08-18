@@ -71,7 +71,7 @@ def build(bld):
         tocopy = \
             glob.glob(os.path.join(springdir, 'AI', 'Wrappers', 'CUtils', '*.cpp')) +\
             glob.glob(os.path.join(springdir, 'AI', 'Wrappers', 'CUtils', '*.c')) +\
-            glob.glob(os.path.join(springdir, 'AI', 'Wrappers', 'LegacyCPP', '*.cpp')) +\
+            glob.glob(os.path.join(springdir, 'AI', 'Wrappers', 'LegacyCpp', '*.cpp')) +\
             [os.path.join(springdir, 'rts', 'System', 'float3.cpp'),
                 os.path.join(springdir, 'rts', 'Game', 'GameVersion.cpp'),
                 os.path.join(springdir, 'rts', 'Sim', 'Misc', 'DamageArray.cpp')]
