@@ -6,11 +6,11 @@
 
 #include "json_spirit/json_spirit.h"
 
-#include "ExternalAI/IGlobalAI.h"
-#include "ExternalAI/IAICheats.h"
-#include "ExternalAI/IAICallback.h"
-#include "ExternalAI/IGlobalAICallback.h"
-#include "Sim/Units/UnitDef.h"
+#include "LegacyCpp/IGlobalAI.h"
+#include "LegacyCpp/IAICheats.h"
+#include "LegacyCpp/IAICallback.h"
+#include "LegacyCpp/IGlobalAICallback.h"
+#include "LegacyCpp/UnitDef.h"
 
 #include "RStarTree/RStarTree.h"
 

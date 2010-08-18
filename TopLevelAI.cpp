@@ -5,9 +5,10 @@
 #include <boost/timer.hpp>
 #include <cfloat>
 
-#include "ExternalAI/IGlobalAICallback.h"
-#include "ExternalAI/IAICheats.h"
-#include "float3.h"
+#include "LegacyCpp/IGlobalAICallback.h"
+#include "LegacyCpp/IAICheats.h"
+#include "Sim/Units/CommandAI/CommandQueue.h"
+#include "System/float3.h"
 
 #include "KPCommands.h"
 #include "Log.h"

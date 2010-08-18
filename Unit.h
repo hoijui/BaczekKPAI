@@ -4,7 +4,7 @@
 
 #include <boost/shared_ptr.hpp>
 
-#include "Sim/Units/UnitDef.h"
+#include "LegacyCpp/UnitDef.h"
 
 #include "UnitAI.h"
 

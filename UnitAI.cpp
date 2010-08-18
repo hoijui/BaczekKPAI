@@ -1,3 +1,6 @@
+
+#include "Sim/Units/CommandAI/CommandQueue.h"
+
 #include "BaczekKPAI.h"
 #include "Log.h"
 #include "Unit.h"

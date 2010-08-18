@@ -11,7 +11,7 @@
 
 
 #include "AIExport.h"
-#include "ExternalAI/IGlobalAICallback.h"
+#include "LegacyCpp/IGlobalAICallback.h"
 
 
 class Log

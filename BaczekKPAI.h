@@ -12,9 +12,9 @@
 #include <vector>
 
 
-#include "ExternalAI/IGlobalAI.h"
-#include "ExternalAI/IAICallback.h"
-#include "ExternalAI/IAICheats.h"
+#include "LegacyCpp/IGlobalAI.h"
+#include "LegacyCpp/IAICallback.h"
+#include "LegacyCpp/IAICheats.h"
 
 
 #include "GUI/StatusFrame.h"
