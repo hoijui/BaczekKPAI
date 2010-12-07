@@ -219,58 +219,58 @@
 			Filter="cpp;c;cxx;rc;def;r;odl;idl;hpj;bat"
 			>
 			<File
-				RelativePath=".\AIExport.cpp"
+				RelativePath=".\src\AIExport.cpp"
 				>
 			</File>
 			<File
-				RelativePath=".\BaczekKPAI.cpp"
+				RelativePath=".\src\BaczekKPAI.cpp"
 				>
 			</File>
 			<File
-				RelativePath=".\BaczekKPAI.def"
+				RelativePath=".\src\BaczekKPAI.def"
 				>
 			</File>
 			<File
-				RelativePath=".\Goal.cpp"
+				RelativePath=".\src\Goal.cpp"
 				>
 			</File>
 			<File
-				RelativePath=".\GoalProcessor.cpp"
+				RelativePath=".\src\GoalProcessor.cpp"
 				>
 			</File>
 			<File
-				RelativePath=".\InfluenceMap.cpp"
+				RelativePath=".\src\InfluenceMap.cpp"
 				>
 			</File>
 			<File
-				RelativePath=".\PythonScripting.cpp"
+				RelativePath=".\src\PythonScripting.cpp"
 				>
 			</File>
 			<File
-				RelativePath=".\RNG.cpp"
+				RelativePath=".\src\RNG.cpp"
 				>
 			</File>
 			<File
-				RelativePath=".\TopLevelAI.cpp"
+				RelativePath=".\src\TopLevelAI.cpp"
 				>
 			</File>
 			<File
-				RelativePath=".\Unit.cpp"
+				RelativePath=".\src\Unit.cpp"
 				>
 			</File>
 			<File
-				RelativePath=".\UnitAI.cpp"
+				RelativePath=".\src\UnitAI.cpp"
 				>
 			</File>
 			<File
-				RelativePath=".\UnitGroupAI.cpp"
+				RelativePath=".\src\UnitGroupAI.cpp"
 				>
 			</File>
 			<Filter
 				Name="GUI"
 				>
 				<File
-					RelativePath=".\GUI\StatusFrame.cpp"
+					RelativePath=".\src\GUI\StatusFrame.cpp"
 					>
 				</File>
 			</Filter>
@@ -302,7 +302,23 @@
 					>
 				</File>
 				<File
-					RelativePath="..\..\..\rts\Sim\Misc\DamageArray.cpp"
+					RelativePath="..\..\Wrappers\LegacyCpp\Command.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\..\Wrappers\LegacyCpp\CommandQueue.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\..\Wrappers\LegacyCpp\DamageArray.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\..\Wrappers\LegacyCpp\MoveData.cpp"
+					>
+				</File>
+				<File
+					RelativePath="..\..\Wrappers\LegacyCpp\UnitDef.cpp"
 					>
 				</File>
 				<File
@@ -318,11 +334,11 @@
 				Name="json_spirit"
 				>
 				<File
-					RelativePath=".\json_spirit\json_spirit_reader.cpp"
+					RelativePath=".\src\json_spirit\json_spirit_reader.cpp"
 					>
 				</File>
 				<File
-					RelativePath=".\json_spirit\json_spirit_writer.cpp"
+					RelativePath=".\src\json_spirit\json_spirit_writer.cpp"
 					>
 				</File>
 			</Filter>
@@ -336,55 +352,55 @@
 			Filter="h;hpp;hxx;hm;inl"
 			>
 			<File
-				RelativePath=".\BaczekKPAI.h"
+				RelativePath=".\src\BaczekKPAI.h"
 				>
 			</File>
 			<File
-				RelativePath=".\Goal.h"
+				RelativePath=".\src\Goal.h"
 				>
 			</File>
 			<File
-				RelativePath=".\GoalProcessor.h"
+				RelativePath=".\src\GoalProcessor.h"
 				>
 			</File>
 			<File
-				RelativePath=".\InfluenceMap.h"
+				RelativePath=".\src\InfluenceMap.h"
 				>
 			</File>
 			<File
-				RelativePath=".\KPCommands.h"
+				RelativePath=".\src\KPCommands.h"
 				>
 			</File>
 			<File
-				RelativePath=".\Log.h"
+				RelativePath=".\src\Log.h"
 				>
 			</File>
 			<File
-				RelativePath=".\PythonScripting.h"
+				RelativePath=".\src\PythonScripting.h"
 				>
 			</File>
 			<File
-				RelativePath=".\RNG.h"
+				RelativePath=".\src\RNG.h"
 				>
 			</File>
 			<File
-				RelativePath=".\GUI\StatusFrame.h"
+				RelativePath=".\src\GUI\StatusFrame.h"
 				>
 			</File>
 			<File
-				RelativePath=".\TopLevelAI.h"
+				RelativePath=".\src\TopLevelAI.h"
 				>
 			</File>
 			<File
-				RelativePath=".\Unit.h"
+				RelativePath=".\src\Unit.h"
 				>
 			</File>
 			<File
-				RelativePath=".\UnitAI.h"
+				RelativePath=".\src\UnitAI.h"
 				>
 			</File>
 			<File
-				RelativePath=".\UnitGroupAI.h"
+				RelativePath=".\src\UnitGroupAI.h"
 				>
 			</File>
 			<Filter
@@ -511,23 +527,23 @@
 				Name="json_spirit"
 				>
 				<File
-					RelativePath=".\json_spirit\json_spirit.h"
+					RelativePath=".\src\json_spirit\json_spirit.h"
 					>
 				</File>
 				<File
-					RelativePath=".\json_spirit\json_spirit_reader.h"
+					RelativePath=".\src\json_spirit\json_spirit_reader.h"
 					>
 				</File>
 				<File
-					RelativePath=".\json_spirit\json_spirit_utils.h"
+					RelativePath=".\src\json_spirit\json_spirit_utils.h"
 					>
 				</File>
 				<File
-					RelativePath=".\json_spirit\json_spirit_value.h"
+					RelativePath=".\src\json_spirit\json_spirit_value.h"
 					>
 				</File>
 				<File
-					RelativePath=".\json_spirit\json_spirit_writer.h"
+					RelativePath=".\src\json_spirit\json_spirit_writer.h"
 					>
 				</File>
 			</Filter>
@@ -535,15 +551,15 @@
 				Name="RStarTree"
 				>
 				<File
-					RelativePath=".\RStarTree\RStarBoundingBox.h"
+					RelativePath=".\src\RStarTree\RStarBoundingBox.h"
 					>
 				</File>
 				<File
-					RelativePath=".\RStarTree\RStarTree.h"
+					RelativePath=".\src\RStarTree\RStarTree.h"
 					>
 				</File>
 				<File
-					RelativePath=".\RStarTree\RStarVisitor.h"
+					RelativePath=".\src\RStarTree\RStarVisitor.h"
 					>
 				</File>
 			</Filter>

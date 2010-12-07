@@ -4,7 +4,7 @@ import os.path
 
 VERSION='0.0.1'
 APPNAME='BaczekKPAI'
-srcdir = '.'
+srcdir = 'src'
 blddir = 'output'
 
 
