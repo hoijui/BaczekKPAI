@@ -1,6 +1,7 @@
-Installation
-------------
+## Installation
 
-Unzip everything in the directory spring is installed (e.g. C:\Program
-Files\Spring). The AI should show up when you reload maps/mods in the
-lobby.
+### Windows
+
+Unzip everything in the directory spring is installed
+(e.g. `C:\Program Files\Spring\`).
+The AI should show up when you reload maps/mods in the lobby.
