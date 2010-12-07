@@ -1,5 +1,11 @@
 #include <cmath>
 #include <ctime>
+// FIXME hack, required when building with CMake
+namespace std {
+	double max(float f, double d) {
+		return ((double)f > d) ? (double)f : d;
+	}
+}
 #include <boost/random.hpp>
 #include <boost/math/constants/constants.hpp>
 
