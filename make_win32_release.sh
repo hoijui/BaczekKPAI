@@ -75,7 +75,7 @@ cp -p data/py/*.py "$ZIPDIR/py"
 cp -p "$PYLIBDIR"/* "$ZIPDIR/py"
 
 # docs
-cp -p README_BaczekKPAI.txt "$TEMPDIR"
+cp -p README.markdown "$TEMPDIR"
 
 # dll dependencies
 for dep in $DEPSDIRS; do
