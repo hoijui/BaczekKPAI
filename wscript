@@ -73,8 +73,7 @@ def build(bld):
             glob.glob(os.path.join(springdir, 'AI', 'Wrappers', 'CUtils', '*.c')) +\
             glob.glob(os.path.join(springdir, 'AI', 'Wrappers', 'LegacyCpp', '*.cpp')) +\
             [os.path.join(springdir, 'rts', 'System', 'float3.cpp'),
-                os.path.join(springdir, 'rts', 'Game', 'GameVersion.cpp'),
-                os.path.join(springdir, 'rts', 'Sim', 'Misc', 'DamageArray.cpp')]
+                os.path.join(springdir, 'rts', 'Game', 'GameVersion.cpp')]
         return tocopy
 
     spring_files = get_spring_files()
@@ -93,8 +92,8 @@ def build(bld):
             features='cxx cc cshlib',
             includes=['.'] + [os.path.join(bld.env['spring_dir'], x)
                 for x in ('rts', 'rts/System', 'AI/Wrappers',
-                    'AI/Wrappers/CUtils', 'AI/Wrappers/LegacyCPP',
-                    'rts/Sim/Misc', 'rts/Game')],
+                    'AI/Wrappers/CUtils', 'AI/Wrappers/LegacyCpp',
+                    'rts/Game')],
             uselib = '''BOOST_SYSTEM BOOST_SIGNALS BOOST_THREAD BOOST_FILESYSTEM
                         BOOST_PYTHON PYEMBED BOOST''',
             source = \

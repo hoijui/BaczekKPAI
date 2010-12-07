@@ -1,5 +1,5 @@
 
-#include "Sim/Units/CommandAI/CommandQueue.h"
+#include "LegacyCpp/CommandQueue.h"
 
 #include "BaczekKPAI.h"
 #include "Log.h"

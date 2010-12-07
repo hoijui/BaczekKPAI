@@ -5,7 +5,7 @@
 #include <boost/shared_ptr.hpp>
 #include <boost/function.hpp>
 
-#include "float3.h"
+#include "System/float3.h"
 
 #include "Goal.h"
 #include "GoalProcessor.h"

@@ -18,8 +18,8 @@
 #include "LegacyCpp/IGlobalAICallback.h"
 #include "LegacyCpp/IAICheats.h"
 #include "LegacyCpp/UnitDef.h"
-#include "Sim/MoveTypes/MoveInfo.h"
-#include "Sim/Features/FeatureDef.h"
+#include "LegacyCpp/MoveData.h"
+#include "LegacyCpp/FeatureDef.h"
 #include "CUtils/Util.h" // we only use the defines
 
 // project includes

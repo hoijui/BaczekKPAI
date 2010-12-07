@@ -7,7 +7,7 @@
 
 #include "LegacyCpp/IGlobalAICallback.h"
 #include "LegacyCpp/IAICheats.h"
-#include "Sim/Units/CommandAI/CommandQueue.h"
+#include "LegacyCpp/CommandQueue.h"
 #include "System/float3.h"
 
 #include "KPCommands.h"

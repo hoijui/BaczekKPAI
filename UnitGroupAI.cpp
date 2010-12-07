@@ -2,7 +2,7 @@
 #include <boost/foreach.hpp>
 #include <boost/timer.hpp>
 
-#include "Sim/MoveTypes/MoveInfo.h"
+#include "LegacyCpp/MoveData.h"
 
 #include "Log.h"
 #include "BaczekKPAI.h"
