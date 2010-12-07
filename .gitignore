@@ -16,5 +16,6 @@ UpgradeLog*
 *.pdb
 .*.swp
 waf-*-*/
+/.waf-*-*/
 output/
 .lock-*
