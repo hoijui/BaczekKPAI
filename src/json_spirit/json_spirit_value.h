@@ -219,6 +219,11 @@ namespace json_spirit
             case bool_type:  std::swap( bool_, tmp.bool_ ); break;
             case int_type:   std::swap( i_,    tmp.i_ );    break;
             case real_type:  std::swap( d_,    tmp.d_ );    break;
+            case obj_type:   break;
+            case array_type: break;
+            case str_type:   break;
+            case null_type:  break;
+            default:         break;
         };
 
         return *this;

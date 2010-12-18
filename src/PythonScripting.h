@@ -1,5 +1,14 @@
 #pragma once
 
+#ifdef _POSIX_C_SOURCE
+// cause it is redefined in Python.h
+#	undef _POSIX_C_SOURCE
+#endif
+#ifdef _XOPEN_SOURCE
+// cause it is redefined in Python.h
+#	undef _XOPEN_SOURCE
+#endif
+
 #if defined(_DEBUG)
 // fix some _DEBUG mismatches
 #	include <cstdio>

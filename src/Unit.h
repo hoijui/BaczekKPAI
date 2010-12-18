@@ -40,7 +40,7 @@ public:
 	// last attacked
 	int last_attacked_frame;
 
-	Unit(BaczekKPAI* g_ai, int id) : global_ai(g_ai), id(id), is_complete(false), is_killed(false),
+	Unit(BaczekKPAI* g_ai, int id) : id(id), global_ai(g_ai), is_complete(false), is_killed(false),
 		is_producing(false)
 	{ Init(); }
 	~Unit() {}

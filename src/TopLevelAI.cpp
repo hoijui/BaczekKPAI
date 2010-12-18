@@ -1,5 +1,5 @@
 #include <algorithm>
-#include <strstream>
+#include <sstream>
 #include <cmath>
 #include <boost/foreach.hpp>
 #include <boost/timer.hpp>

@@ -1,5 +1,14 @@
 #include <string>
 
+#ifdef _POSIX_C_SOURCE
+// cause it is redefined in Python.h
+#	undef _POSIX_C_SOURCE
+#endif
+#ifdef _XOPEN_SOURCE
+// cause it is redefined in Python.h
+#	undef _XOPEN_SOURCE
+#endif
+
 #if defined(_DEBUG)
 // fix some _DEBUG mismatches
 #	include <cstdio>
@@ -11,7 +20,7 @@
 #	include "Python.h"
 #endif
 
-#include <strstream>
+#include <sstream>
 
 #include <boost/python.hpp>
 #include <boost/filesystem.hpp>
@@ -77,7 +86,7 @@ struct std_item
     {
         if( i<0 ) i+=x.size();
         if( i>=0 && i<x.size() ) return x[i];
-        IndexError();
+        else IndexError();
     }
     static void set(T & x, int i, V const& v)
     {
@@ -115,9 +124,9 @@ BOOST_PYTHON_MODULE(pykpai)
 		;
 	class_<std::vector<float3> >("vector_float3")
 		.def("__len__", &std::vector<float3>::size)
-		.def("__getitem__", &std_item<std::vector<float3>, float3 >::get,
+		.def("__getitem__", &std_item<std::vector<float3>, float3>::get,
 			return_value_policy<copy_non_const_reference>())
-		.def("__setitem__", &std_item<std::vector<float3>, float3 >::set,
+		.def("__setitem__", &std_item<std::vector<float3>, float3>::set,
 			 with_custodian_and_ward<1,2>()) // to let container keep value
 		.def("__delitem__", &std_item<std::vector<float3>, float3>::del)
 		;
@@ -137,7 +146,9 @@ PythonScripting::PythonScripting(int teamId, std::string datadir)
 {
 	this->teamId = teamId;
 
-	PyImport_AppendInittab( "pykpai", &initpykpai );
+	char moduleName[32];
+	strcpy(moduleName, "pykpai");
+	PyImport_AppendInittab( moduleName, &initpykpai );
 	Py_Initialize();
 
 	object main_module = import("__main__");

@@ -357,12 +357,9 @@ void BaczekKPAI::DumpStatus()
 		const UnitDef* ud = cb->GetUnitDef(id);
 		assert(ud);
 		// print owner
-		char *ownerstr;
-		if (cb->GetUnitTeam(id)
-				== cb->GetMyTeam()) {
+		std::string ownerstr = "allied";
+		if (cb->GetUnitTeam(id) == cb->GetMyTeam()) {
 			ownerstr = "mine";
-		} else {
-			ownerstr = "allied";
 		}
 		statusFile << "\t" << ud->name << " " << id << " "
 			<< pos.x << " " << pos.y << " " << pos.z

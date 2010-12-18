@@ -167,8 +167,6 @@ void UnitGroupAI::ProcessRetreatMove(Goal* goal)
 	// may throw
 	rallyPoint = boost::get<float3>(goal->params[0]);
 
-	int i = 0;
-
 	BOOST_FOREACH(UnitAISet::value_type& v, units) {
 		UnitAIPtr uai = v.second;
 		Unit* unit = uai->owner;
@@ -209,8 +207,6 @@ void UnitGroupAI::ProcessAttack(Goal* goal)
 {
 	assert(goal);
 	assert(goal->type == ATTACK);
-
-	int i = 0;
 
 	BOOST_FOREACH(UnitAISet::value_type& v, units) {
 		UnitAIPtr uai = v.second;
@@ -317,8 +313,7 @@ void UnitGroupAI::RetreatUnusedUnits()
 
 Goal* UnitGroupAI::CreateRetreatGoal(UnitAI &uai, int timeoutFrame)
 {
-	Unit* unit = uai.owner;
-	Goal *g = Goal::GetGoal(Goal::CreateGoal(1, RETREAT));
+	Goal* g = Goal::GetGoal(Goal::CreateGoal(1, RETREAT));
 	assert(g);
 	g->timeoutFrame = timeoutFrame;
 	g->params.push_back(random_offset_pos(rallyPoint, SQUARE_SIZE*4, SQUARE_SIZE*4*sqrt((float)units.size())));

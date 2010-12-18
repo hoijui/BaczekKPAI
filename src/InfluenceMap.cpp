@@ -117,7 +117,6 @@ void InfluenceMap::FindLocalMinima(float radius, std::vector<int> &values, std::
 	if (radius < 0)
 		return;
 
-	float r = radius*radius*scalex*scaley;
 	values.clear();
 	positions.clear();
 
