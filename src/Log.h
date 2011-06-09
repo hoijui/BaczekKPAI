@@ -13,6 +13,7 @@
 #include "AIExport.h"
 #include "LegacyCpp/IGlobalAICallback.h"
 
+using namespace springLegacyAI;
 
 class Log
 {
